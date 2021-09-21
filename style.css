@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display';
+}
+
+body{
+    background-image: url('images/pattern-background-mobile.svg');
+    background-color: hsl(225, 100%, 94%);
+}
+
+.Order_card{
+    background-color:#fff;
+    border-radius: 20px;
+    width:350px;
+    height: 615px;
+    margin: 70px 18px;
+}
+
+.Order_header h1{
+    text-align: center;
+    margin-top: 25px;
+    color: #1f2f56;
+    font-weight: 900;
+}
+
+.Order_header p{
+    margin: 25px;
+    text-align: center;
+    line-height:25px;
+    font-size: 16px;
+    color: #7280a7;
+    font-weight: 500;
+}
+
+.Order_header img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.Order_plan{
+    display: flex;
+    gap:25px;
+    background-color:hsl(225, 100%, 98%);
+    margin: 20px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 20px;
+}
+
+.Order_plan_list h3{
+    font-size: 17px;
+}
+
+.Order_plan_list p{
+    font-size: 17px;
+    margin-top: 5px;
+    color: #7280a7;
+    font-weight: 500;
+}
+
+.Order_plan h4{
+    color: blue;
+    text-decoration: underline;
+    margin-left:20px;
+}
+
+.Order_plan h4:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color:hsl(253, 74%, 59%);
+}
+
+.payment_button{
+    background-color:hsl(245, 75%, 52%);
+    color:#fff;
+    width:310px;
+    margin: 10px 20px;
+    padding:15px;
+    border-radius: 10px;
+    border: 1px solid hsl(223, 47%, 23%);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.payment_button:hover{
+    background-color: hsl(253, 74%, 59%);
+    border: none;
+    cursor: pointer;
+}
+
+.Order_button p{
+    font-weight: 700;
+    color: #7280a7;
+    text-align: center;
+    margin-top: 17px;
+    cursor: pointer;
+}
+
+.Order_button p:hover{
+    color:#1f2f56;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 600px) {
+
+    body{
+        background-image: url('images/pattern-background-desktop.svg');
+    }
+
+    .Order_card{
+        width: 450px;
+        margin: 0 auto;
+        margin-top: 90px;
+        height:680px;
+    }
+
+    .Order_header h1{
+        margin-top: 40px;
+        font-size: 28px;
+    }   
+    
+    .Order_header p{
+        margin: 20px 50px;
+    }
+    
+    .Order_plan{
+        margin :0 50px;
+    }
+
+    .Order_plan h4{
+        margin-left: 50px;  
+    }
+    
+    .payment_button{
+        margin-left: 50px;
+        width:350px;
+        margin-top: 30px;
+    }
+
+    
+}
